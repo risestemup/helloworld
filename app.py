@@ -7,7 +7,8 @@ def hello():
     # Nicholas' update: added functionality to print names (just fill in your names in the array list, it should avoid any merge conflict):
     # !dont forget the comma 
     names = [
-        "Nicholas is here!"
+        "Nicholas is here!",
+        "Kyle is here!"
     ]
 
     items = "".join(f"<li>{name}</li>" for name in names);
