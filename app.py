@@ -8,7 +8,8 @@ def hello():
     # !dont forget the comma 
     names = [
         "Nicholas is here!",
-        "Kyle is here!"
+        "Kyle is here!",
+        "Lavin is here :)",
     ]
 
     items = "".join(f"<li>{name}</li>" for name in names);
@@ -20,5 +21,6 @@ def hello():
     # commented original: cant have 2 returns
     # return "Hello World!"
 
+# Lavin: turned on Flask debug mode (so we can see live code updates)
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
