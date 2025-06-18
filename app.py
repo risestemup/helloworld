@@ -10,6 +10,7 @@ def hello():
         "Nicholas is here!",
         "Kyle is here!",
         "Lavin is here :)",
+        "Daniel is here!"
     ]
 
     items = "".join(f"<li>{name}</li>" for name in names);
