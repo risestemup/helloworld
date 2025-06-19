@@ -1,4 +1,6 @@
 from flask import Flask
+import sys
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -22,6 +24,10 @@ def hello():
     # commented original: cant have 2 returns
     # return "Hello World!"
 
-# Lavin: turned on Flask debug mode (so we can see live code updates)
+# Lavin: debug mode is optional, run with "-d" to enable
 if __name__ == "__main__":
-    app.run(debug=True)
+    debug_mode = "-d" in sys.argv
+    app.run(debug=debug_mode)
+
+
+
